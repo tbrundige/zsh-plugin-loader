@@ -1,10 +1,14 @@
 #!/bin/zsh
 
+# Updater
+alias pu="find ${ZDOTDIR:-$HOME}/.zsh_plugins -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull"
+
 github_plugins=(
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
-  davidde/git
+  tbrundige/zsh-qol
+  tbrundige/zsh-git
 )
 
 for plugin in $github_plugins; do
