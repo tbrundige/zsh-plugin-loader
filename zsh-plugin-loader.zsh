@@ -3,6 +3,8 @@
 github_plugins=(
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
+  zsh-users/zsh-syntax-highlighting
+  davidde/git
 )
 
 for plugin in $github_plugins; do
