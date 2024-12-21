@@ -9,6 +9,8 @@ github_plugins=(
   zsh-users/zsh-syntax-highlighting
   tbrundige/zsh-qol
   tbrundige/zsh-git
+  tbrundige/zsh-node
+  tbrundige/zsh-python
 )
 
 for plugin in $github_plugins; do
